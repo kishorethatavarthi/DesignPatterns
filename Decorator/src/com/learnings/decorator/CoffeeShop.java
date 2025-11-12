@@ -7,7 +7,6 @@ public class CoffeeShop {
 		coffee = new SugerDecorator(coffee);
 		System.out.println(coffee.description());
 		System.out.println(coffee.cost());
-		
 	}
 
 }
