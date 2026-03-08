@@ -1,1 +1,25 @@
 /.metadata/
+# Compiled Java files
+*.class
+
+# Build folders
+bin/
+target/
+build/
+out/
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# IntelliJ files
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

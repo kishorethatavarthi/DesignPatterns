@@ -1,24 +1,25 @@
 package com.learnings.adapter;
 
-public class CoffeeMachineAdapter implements SmartDevice{
-	
+public class CoffeeMachineAdapter implements SmartDevice {
+
 	private CoffeeMachine coffeeMachine;
-	  public CoffeeMachineAdapter(CoffeeMachine coffeeMachine) {
-	    this.coffeeMachine = coffeeMachine;
-	  }
+
+	public CoffeeMachineAdapter(CoffeeMachine coffeeMachine) {
+		this.coffeeMachine = coffeeMachine;
+	}
 
 	@Override
 	public void turnOn() {
 		coffeeMachine.initializeZigbeeConnection();
-	    coffeeMachine.startBrewing();
-		
+		coffeeMachine.startBrewing();
+
 	}
 
 	@Override
 	public void turnOff() {
 		coffeeMachine.stopBrewing();
-	    coffeeMachine.terminateZigbeeConnection();
-		
+		coffeeMachine.terminateZigbeeConnection();
+
 	}
 
 }
